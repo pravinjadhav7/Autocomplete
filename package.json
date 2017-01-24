@@ -1,0 +1,26 @@
+{
+  "name": "materilize.autocomlete",
+  "version": "1.0.0",
+  "description": "angularjs autocomplete file",
+  "main": "demo/autocomplete/autocomplete.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pravinjadhav7/Autocomplete.git"
+  },
+  "keywords": [
+    "html",
+    "javascript"
+  ],
+  "author": "Pravin jadhav <pravinjadhav762@gmail.com> (http://pravinjadhav762.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pravinjadhav7/Autocomplete/issues"
+  },
+  "homepage": "https://github.com/pravinjadhav7/Autocomplete#readme"
+}
