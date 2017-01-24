@@ -1,8 +1,8 @@
 {
-  "name": "materilize.autocomlete",
+  "name": "materilize.autocomplete",
   "version": "1.0.0",
-  "description": "angularjs autocomplete file",
-  "main": "demo/autocomplete/autocomplete.min.js",
+  "description": "angularjs autocomplete",
+  "main": "autocomplete/autocomplete.min.js",
   "directories": {
     "test": "test"
   },
@@ -15,7 +15,7 @@
   },
   "keywords": [
     "html",
-    "javascript"
+    "javasctipt"
   ],
   "author": "Pravin jadhav <pravinjadhav762@gmail.com> (http://pravinjadhav762.com/)",
   "license": "MIT",
