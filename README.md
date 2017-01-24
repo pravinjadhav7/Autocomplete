@@ -36,6 +36,15 @@ Eg.
 | Parameter | Type | Description | Binding |
 | :------------- |:-------------| :----- | :-----| 
 | ac-items | `expression` | An expression in the format of `item in items` to iterate over matches for your search. | = | 
+|ac-input-name|`string`|The name attribute given to the input element to be used with FormControlle.|@|
+|ac-selected-item|`object`| A model to be bind which is selected item.|=|
+|ac-display-property|`string`| A list of the item diaplay use property name |@|
+|ac-selected-item-change|`expression`|An expression to be run each time a new item is selected.|&|
+|ac-search-text|`expression` | A model to bind the search query text to | =|
+|ac-remote-method|`expression`|Handle the searchText result and provide the result|@|
+|ac-place-holder|`string`|Secondary Placeholder text that will display after label move|@|
+|ac-input-minlength|`number`| The minimum length for the input's value for validation|@|
+
 
 # Demo 
 ============
