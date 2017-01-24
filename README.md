@@ -50,8 +50,19 @@ Eg.
 |ac-min-length|`number`|Specifies the minimum length of text before autocomplete will make suggestions|=|
 
 
-# Demo 
-============
+
+### Running test suite
+
+In order to run tests clone repository and run following commands within
+repo's directory:
+
+```
 1. npm install
 2. bower install
-3. grunt serve
+3. grunt
+```
+
+
+
+# Demo 
+============
