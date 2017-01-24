@@ -3,24 +3,18 @@ module.exports = function (grunt) {
           grunt.initConfig({
             pkg: grunt.file.readJSON('package.json'),
             
-            concat: {
-              js: {
-                src: ['client/autocomplete/*.js'],
-                dest: 'client/dist/autocomplete.concat.js',
-              }
-            },
             copy: {
               html: {
               
-                src: 'client/autocomplete/views/autocomplete.html',
+                src: 'demo/client/autocomplete/views/autocomplete.html',
                 dest: 'autocomplete/views/autocomplete.html',
               },
               css:{
-                src: 'client/css/autocomplete.css',
+                src: 'demo/client/css/autocomplete.css',
                 dest:'autocomplete/css/autocomplete.css'
               },
               js:{
-                  src:'client/dist/*.js',
+                  src:'demo/client/dist/autocomplete.concat.js',
                   dest:'autocomplete/autocomplete.js'
               }
             },
@@ -31,7 +25,7 @@ module.exports = function (grunt) {
               },
               target: {
                 files: {
-                  'autocomplete/css/autocomplete.min.css': ['client/css/*.css']
+                  'autocomplete/css/autocomplete.min.css': ['demo/client/css/*.css']
                 }
               }
             },
@@ -39,45 +33,23 @@ module.exports = function (grunt) {
             jshint: {
               files: [
                 'Gruntfile.js',
-                'client/*.js'
+                'demo/client/*.js'
               ],
               options: {
                 jshintrc: true
               }
             },
-            sass: { // Begin Sass Plugin
-              dist: {
-                options: {
-                  sourcemap: 'none'
-                },
-                files: [{
-                  expand: true,
-                  cwd: 'client',
-                  src: ['scss/*.scss'],
-                  dest: 'client/css',
-                  ext: '.css'
-                }]
-              }
-            },
+           
             uglify: { 
                 options: {
                   sourceMap: true,
                   sourceMapName: 'autocomplete/aautocomplete.min.map'
                 },
                 js: {
-                src: ['client/dist/*.js'],
+                src: ['demo/client/dist/*.js'],
                 dest: 'autocomplete/autocomplete.min.js'
               },
 
-            },
-            compass: {
-              dist: {
-                options: {
-                  sassDir: 'client/scss',
-                  cssDir: 'client/css',
-                  environment: 'production'
-                }
-              }
             },
             watch: { // Compile everything into one task with Watch Plugin
               css: {
@@ -113,15 +85,13 @@ module.exports = function (grunt) {
             }
   });
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   
-  grunt.registerTask('default', ['copy','cssmin','concat','sass','uglify','compass','jshint','watch']);
+  grunt.registerTask('default', ['copy','cssmin','uglify','jshint','watch']);
 };
 
 
