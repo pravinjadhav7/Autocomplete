@@ -40,10 +40,14 @@ Eg.
 |ac-selected-item|`object`| A model to be bind which is selected item.|=|
 |ac-display-property|`string`| A list of the item diaplay use property name |@|
 |ac-selected-item-change|`expression`|An expression to be run each time a new item is selected.|&|
-|ac-search-text|`expression` | A model to bind the search query text to | =|
+|ac-search-text|`expression`| A model to bind the search query text to |=|
 |ac-remote-method|`expression`|Handle the searchText result and provide the result|@|
 |ac-place-holder|`string`|Secondary Placeholder text that will display after label move|@|
 |ac-input-minlength|`number`| The minimum length for the input's value for validation|@|
+|ac-show-input-name|`string`|Input text for the hiding secondary palceholder|=|
+|ac-dropdown-items|`expression`|For the calculate dropdown height |=|
+|ac-clear-button|`expression`|Clear the inputtext if selected value is there|=|
+|ac-min-length|`number`|Specifies the minimum length of text before autocomplete will make suggestions|=|
 
 
 # Demo 
