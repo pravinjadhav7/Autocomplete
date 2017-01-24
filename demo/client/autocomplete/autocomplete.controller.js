@@ -212,7 +212,7 @@
          * Determines if the menu should be shown.
          */
         self.shouldShow = function () {
-            return (self.isMinLengthMet() && self.hasMatches()) || self.notFoundVisible();
+            return (self.isMinLengthMet() && self.hasMatches()) ;
         };
 
 

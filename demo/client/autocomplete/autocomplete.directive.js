@@ -19,7 +19,8 @@
                 inputMinlength:   '@acInputMinlength',
                 minLength:        '=?acMinLength',
                 autocompleteId: '@acAutocompleteId',
-                isDisabled:'@?acIsDisabled'
+                isDisabled:'@?acIsDisabled',
+                imageUrl:'=?acImageUrl'
 
 
             },
