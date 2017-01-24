@@ -20,8 +20,12 @@ module.exports = function (grunt) {
                 dest:'autocomplete/css/autocomplete.css'
               },
               js:{
-                  src:'client/dist/autocomplete.concat.js',
+                  src:'client/autocomplete/*.js',
                   dest:'autocomplete/autocomplete.js'
+              },
+              file:{
+                src:'client',
+                dest:'demo/'
               }
             },
             cssmin:{
