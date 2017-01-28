@@ -5,9 +5,9 @@ A simple AngularJS directive that allows you create autocomplete input text that
 
 # installation 
 ============
-`bower install material.autocomplte --save`
+`bower install materializ.autocomplte --save`
 Or
-`npm install material.autocomplte --save`
+`npm install materialize.autocomplte --save`
 
 
 ### Getting Started
