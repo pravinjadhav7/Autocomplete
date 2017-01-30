@@ -1,0 +1,21 @@
+{
+  "name": "materialize.autocomplete",
+  "description": "angularjs autocomplete",
+  "main": "autocomplete/autocomplete.min.js",
+  "authors": [
+    "Pravin jadhav <pravinjadhav762@gmail.com> (http://pravinjadhav762.com/)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "html",
+    "javasctipt"
+  ],
+  "homepage": "https://github.com/pravinjadhav7/Autocomplete",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
